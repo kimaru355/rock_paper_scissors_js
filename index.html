@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="./build.css" />
+  </head>
+  <body>
+    <h1
+      class="text-2xl text-red-400 text-center font-bold border-solid border-b border-b-red-400 mt-4"
+    >
+      Rock Paper Scissors
+    </h1>
+    <div
+      class="flex items-center justify-center m-10 gap-5 hover:bg-slate-300 p-10"
+    >
+      <button
+        class="p-2 px-5 text-lg font-bold bg-blue-500 rounded-md hover:bg-lime-400"
+        onclick="game('rock')"
+      >
+        Rock
+      </button>
+      <button
+        class="p-2 px-5 text-lg font-bold bg-blue-500 rounded-md hover:bg-lime-400"
+        onclick="game('paper')"
+      >
+        Paper
+      </button>
+      <button
+        class="p-2 px-5 text-lg font-bold bg-blue-500 rounded-md hover:bg-lime-400"
+        onclick="game('scissors')"
+      >
+        Scissors
+      </button>
+    </div>
+    <div
+      id="outcome"
+      class="m-10 p-10 text-center text-xl text-lime-950 bg-slate-200"
+    ></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
