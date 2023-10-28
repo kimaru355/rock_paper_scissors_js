@@ -1,3 +1,11 @@
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    game(button.id);
+  });
+});
+
 function endGame(pc, user, outcome) {
   let message;
   if (outcome === "tie") {
